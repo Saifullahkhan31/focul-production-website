@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Define the brand fonts as Tailwind-friendly variables */
+@layer base {
+  :root {
+    --font-michroma: "Michroma", sans-serif;
+    --font-orbitron: "Orbitron", sans-serif;
+    
+    /* Adding the Focul Brand Orange we discussed */
+    --color-focul-orange: #E17A00;
+  }
+}
+
+/* Ensure the background is always pure black to match the video/images */
+@layer base {
+  html, body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    /* Use 'Orbitron' for standard text to look technical and sharp */
+    font-family: var(--font-orbitron);
+  }
+
+  /* Force headers to use the wide 'Michroma' font */
+  h1, h2, h3 {
+    font-family: var(--font-michroma);
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+}
