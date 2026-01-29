@@ -1,5 +1,7 @@
 import React from 'react';
 import { FaYoutube, FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import logoImg from '../assets/logo.png';
+import bgImg from '../assets/bg-placeholder.jpeg';
 
 interface SocialIconProps {
   icon: React.ReactNode;
@@ -13,7 +15,7 @@ const Home: React.FC = () => {
       {/* 1. Background Image - Clear and Visible */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/src/assets/bg-placeholder.jpeg')" }} 
+        style={{ backgroundImage: `url(${bgImg})` }} 
       ></div>
 
       {/* 2. Main Hero Content - Changed to justify-center with a gap */}
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
         <div className="relative flex items-center justify-center md:w-auto select-none -mt-12 -ml-8">
           {/* Main Logo */}
           <img 
-            src="/src/assets/logo.png" 
+            src={logoImg}
             alt="Focul Productions Logo" 
             className="w-95 md:w-145 h-auto drop-shadow-2xl"
           />
