@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaYoutube, FaFacebookF, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 import logoImg from '../assets/logo.png';
 import bgImg from '../assets/bg-placeholder.jpeg';
@@ -31,12 +32,12 @@ const Home: React.FC = () => {
           />
 
           {/* Arced Nav: Adjusted positioning for better clearance */}
-          <nav className="absolute left-[75%] md:left-[82%] top-1/2 -translate-y-1/2 flex flex-col gap-4 md:gap-6 text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase whitespace-nowrap">
-            <a href="#home" className="text-[#E17A00] ml-0 transition-transform hover:scale-110">Home</a>
-            <a href="#about" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">About</a>
+          <nav className="absolute left-[75%] md:left-[82%] top-[51.8%] -translate-y-1/2 flex flex-col gap-4 md:gap-6 text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase whitespace-nowrap">
+            <Link to="/" className="text-[#E17A00] ml-0 transition-all hover:translate-x-2">Home</Link>
+            <Link to="/about" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">About</Link>
             <a href="#portfolio" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Portfolio</a>
-            <a href="#services" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Services</a>
-            <a href="#contact" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">Contact Us</a>
+            <a href="#services" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">Services</a>
+            <a href="#contact" className="hover:text-[#E17A00] transition-all ml-0 hover:translate-x-2">Contact Us</a>
           </nav>
         </div>
 
