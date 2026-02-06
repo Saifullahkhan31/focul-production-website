@@ -59,7 +59,7 @@ const Home: React.FC = () => {
       {/* 3. Social Media Footer (Bottom Right) */}
       <footer className="absolute bottom-8 right-8 z-20 flex gap-4">
         <SocialIcon icon={<FaYoutube />} link="https://youtube.com/@foculproductions" />
-        <SocialIcon icon={<FaFacebookF />} link="#" />
+        <SocialIcon icon={<FaFacebookF />} link="https://www.facebook.com/people/Focul-Productions/61565742337775/" />
         <SocialIcon icon={<FaInstagram />} link="https://instagram.com/foculproductions" />
         <SocialIcon icon={<FaXTwitter />} link="https://x.com/FoculP31671" />
       </footer>
