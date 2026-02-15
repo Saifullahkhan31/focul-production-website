@@ -3,38 +3,39 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logoImg from '../assets/logo.png';
 import bgImg from '../assets/bg-placeholder.jpeg';
+import { clients } from '../data/clients';
 
 const Clients: React.FC = () => {
   // Client logos array - add logo paths in src/assets/clients/
-  const clients = [
-    { name: 'IDEAS PAKISTAN', logo: '/src/assets/clients/IDEAS 2024.png' },
-    { name: 'SINDH POLICE', logo: '/src/assets/clients/Sindh Police Logo copy.png' },
-    { name: 'CHILDLIFE', logo: '/src/assets/clients/ChildLife-logo.png' },
-    { name: 'FM', logo: '/src/assets/clients/FM Logo.png' },
-    { name: 'DIFF (DUBAI INTERNATIONAL FILM FESTIVAL)', logo: '/src/assets/clients/DIFF LOGO.png' },
-    { name: 'AD AVIATION', logo: '/src/assets/clients/AD ADAVIATION.png' },
-    { name: 'DIPLOMAT BUSINESSMEN CLUB', logo: '/src/assets/clients/Diplomat Businessmen Club.png' },
+  // const clients = [
+  //   { name: 'IDEAS PAKISTAN', logo: '/src/assets/clients/IDEAS 2024.png' },
+  //   { name: 'SINDH POLICE', logo: '/src/assets/clients/Sindh Police Logo copy.png' },
+  //   { name: 'CHILDLIFE', logo: '/src/assets/clients/ChildLife-logo.png' },
+  //   { name: 'FM', logo: '/src/assets/clients/FM Logo.png' },
+  //   { name: 'DIFF (DUBAI INTERNATIONAL FILM FESTIVAL)', logo: '/src/assets/clients/DIFF LOGO.png' },
+  //   { name: 'AD AVIATION', logo: '/src/assets/clients/AD ADAVIATION.png' },
+  //   { name: 'DIPLOMAT BUSINESSMEN CLUB', logo: '/src/assets/clients/Diplomat Businessmen Club.png' },
     
-    { name: 'EMILY & CHILLY', logo: '/src/assets/clients/Emily & Chilly.png' },
-    { name: 'HAZBI CHEMICALS', logo: '/src/assets/clients/Hazbi LOGO png 1.png' },
-    { name: 'URBAND', logo: '/src/assets/clients/URBAND.png' },
-    { name: 'PELIKAN KNITWEAR', logo: '/src/assets/clients/Pelikan-Logo-2-1 copy.png' },
-    { name: 'PERFUME BAR - DUBAI', logo: '/src/assets/clients/Perfume Bar.jpg.jpeg' },
-    { name: 'STREET SMART CLOTHING', logo: '/src/assets/clients/street smart clothing.jpeg' },
-    { name: 'EMARATECH', logo: '/src/assets/clients/Emaratech Logo.png' },
-    { name: 'WAFRA', logo: '/src/assets/clients/Wafra.jpg.jpeg' },
-    { name: 'JENGAN', logo: '/src/assets/clients/Jengan.png' },
-    { name: 'KARSAZ', logo: '/src/assets/clients/Karsaz-Logo-High-Resolution.png' },
-    { name: 'AL WARA PERFUMES', logo: '/src/assets/clients/Al Wara Perfumes.jfif.jpeg' },
-    { name: 'HPSAA', logo: '/src/assets/clients/HPSAA LOGO.png' },
+  //   { name: 'EMILY & CHILLY', logo: '/src/assets/clients/Emily & Chilly.png' },
+  //   { name: 'HAZBI CHEMICALS', logo: '/src/assets/clients/Hazbi LOGO png 1.png' },
+  //   { name: 'URBAND', logo: '/src/assets/clients/URBAND.png' },
+  //   { name: 'PELIKAN KNITWEAR', logo: '/src/assets/clients/Pelikan-Logo-2-1 copy.png' },
+  //   { name: 'PERFUME BAR - DUBAI', logo: '/src/assets/clients/Perfume Bar.jpg.jpeg' },
+  //   { name: 'STREET SMART CLOTHING', logo: '/src/assets/clients/street smart clothing.jpeg' },
+  //   { name: 'EMARATECH', logo: '/src/assets/clients/Emaratech Logo.png' },
+  //   { name: 'WAFRA', logo: '/src/assets/clients/Wafra.jpg.jpeg' },
+  //   { name: 'JENGAN', logo: '/src/assets/clients/Jengan.png' },
+  //   { name: 'KARSAZ', logo: '/src/assets/clients/Karsaz-Logo-High-Resolution.png' },
+  //   { name: 'AL WARA PERFUMES', logo: '/src/assets/clients/Al Wara Perfumes.jfif.jpeg' },
+  //   { name: 'HPSAA', logo: '/src/assets/clients/HPSAA LOGO.png' },
     
     
-    // Commented out - no logo available
-    // { name: 'DFW (DUBAI FASHION WEEK)', logo: '/src/assets/clients/dfw.png' },
-    // { name: 'PAKISTAN INTERNATIONAL SCREEN AWARDS', logo: '/src/assets/clients/pisa.png' },
-    // { name: 'DESERT LEADERS', logo: '/src/assets/clients/desert-leaders.png' },
-    // { name: 'CITY STAY HOTEL', logo: '/src/assets/clients/city-stay.png' },
-  ];
+  //   // Commented out - no logo available
+  //   // { name: 'DFW (DUBAI FASHION WEEK)', logo: '/src/assets/clients/dfw.png' },
+  //   // { name: 'PAKISTAN INTERNATIONAL SCREEN AWARDS', logo: '/src/assets/clients/pisa.png' },
+  //   // { name: 'DESERT LEADERS', logo: '/src/assets/clients/desert-leaders.png' },
+  //   // { name: 'CITY STAY HOTEL', logo: '/src/assets/clients/city-stay.png' },
+  // ];
 
   return (
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden font-sans">
