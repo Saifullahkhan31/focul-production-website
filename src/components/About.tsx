@@ -9,7 +9,7 @@ const About: React.FC = () => {
     <div className="relative min-h-screen w-full bg-black text-white overflow-hidden font-sans">
       {/* Background Image - Matching the Home Page aesthetic */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: `url(${bgImg})` }} 
       ></div>
 
@@ -26,8 +26,8 @@ const About: React.FC = () => {
           <div className="flex flex-col gap-6 pr-16 md:pr-24 items-end text-right">
             {/* Title & Subtitle */}
             <div className="flex flex-col w-fit">
-              <h1 className="text-3xl md:text-5xl font-black font-michroma leading-tight tracking-wider">FOCUL PRODUCTIONS</h1>
-              <p className="text-[#E17A00] text-[9px] md:text-[10px] font-bold tracking-[0.2em] mt-1">A MEDIA PRODUCTION COMPANY</p>
+              <h1 className="text-3xl md:text-5xl font-black font-michroma leading-tight tracking-wider" style={{ wordSpacing: '0.35em' }}>FOCUL PRODUCTIONS</h1>
+              <p className="text-[#E17A00] text-[15px] md:text-[15px] font-bold tracking-[0.74em] mt-1">A MEDIA PRODUCTION COMPANY</p>
             </div>
 
             {/* Navigation */}
@@ -39,8 +39,9 @@ const About: React.FC = () => {
             >
               <Link to="/" className="text-gray-400 hover:text-[#E17A00] transition-colors">Home</Link>
               <Link to="/about" className="text-[#E17A00]">About</Link>
-              <a href="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</a>
-              <a href="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</a>
+              <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
+              <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors">Clients</Link>
+              <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <a href="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</a>
             </motion.nav>
           </div>
@@ -54,9 +55,9 @@ const About: React.FC = () => {
           className="space-y-12"
         >
           {/* Intro Section - Modern Glassmorphism */}
-          <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-8 md:p-12 hover:bg-white/8 transition-all duration-500 shadow-xl hover:shadow-2xl hover:border-[#E17A00]/30">
+<div className="bg-white/5 backdrop-blur-md border mt-[7.2%] border-white/10 rounded-lg p-8 md:p-12 hover:bg-white/8 transition-all duration-500 shadow-xl hover:shadow-2xl hover:border-[#E17A00]/30">
             <h3 className="text-[#E17A00] text-xs md:text-sm font-bold tracking-[0.3em] mb-6 uppercase">TRANSFORMING VISION INTO REALITY</h3>
-            <p className="text-gray-200 text-base md:text-lg font-light leading-relaxed max-w-4xl">
+            <p className="text-gray-200 text-lg md:text-xl font-light leading-relaxed max-w-7xl" style={{ wordSpacing: '0.165em' }}>
               Focal Productions is a cutting-edge media production house based in Karachi, Pakistan. 
               Leveraging 20 years of international expertise, we craft captivating visual stories that engage, inspire, and elevate brands.
             </p>
@@ -65,16 +66,16 @@ const About: React.FC = () => {
           {/* Mission & Expertise Section */}
           <div className="space-y-10">
             {/* Our Mission */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/8 transition-all duration-500 hover:border-[#E17A00]/30">
+            <div className="bg-white/5 backdrop-blur-md border mt-[6.5%] border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/8 transition-all duration-500 hover:border-[#E17A00]/30">
               <h3 className="text-[#E17A00] text-xs md:text-sm font-bold tracking-[0.3em] mb-4 uppercase">OUR MISSION</h3>
-              <p className="text-gray-200 text-base md:text-lg font-light leading-relaxed max-w-4xl">
+              <p className="text-gray-200 text-lg md:text-xl font-light leading-relaxed max-w-7xl" style={{ wordSpacing: '0.165em' }}>
                 To deliver top-notch media solutions, fostering meaningful connections between businesses and their audiences. 
                 We combine creativity, technical excellence, and innovative thinking to produce compelling content.
               </p>
             </div>
 
             {/* Our Expertise */}
-            <div>
+            {/* <div>
               <h3 className="text-[#E17A00] text-xs md:text-sm font-bold tracking-[0.3em] mb-6 uppercase">OUR EXPERTISE</h3>
               <div className="grid grid-cols-2 gap-6 max-w-3xl">
                 <ul className="space-y-3">
@@ -93,7 +94,7 @@ const About: React.FC = () => {
                   <li className="bg-white/5 backdrop-blur-md border border-white/10 rounded-lg px-6 py-3 hover:bg-white/8 hover:border-[#E17A00]/30 transition-all duration-300 text-gray-200 text-base md:text-lg font-light">Promotional Videos</li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.section>
       </div>

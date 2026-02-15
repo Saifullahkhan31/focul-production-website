@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
+import Clients from './components/Clients';
+import Portfolio from './components/Portfolio';
+import Services from './components/Services';
 
 const App: React.FC = () => {
   return (
@@ -10,6 +13,9 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/services" element={<Services/>} />
         </Routes>
       </div>
     </Router>
