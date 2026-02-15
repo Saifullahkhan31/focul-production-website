@@ -5,7 +5,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "skipLibCheck": true,
     "noEmit": false, // Change this to false
     "strict": true,
