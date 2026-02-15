@@ -1,44 +1,23 @@
-// Import all images first
-import ideasImg from '../assets/clients/IDEAS 2024.png';
-import sindhPoliceImg from '../assets/clients/Sindh Police Logo copy.png';
-import childlifeImg from '../assets/clients/ChildLife-logo.png';
-import fmImg from '../assets/clients/FM Logo.png';
-import diffImg from '../assets/clients/DIFF LOGO.png';
-import adAviationImg from '../assets/clients/AD ADAVIATION.png';
-import diplomatImg from '../assets/clients/Diplomat Businessmen Club.png';
-import emilyChillyImg from '../assets/clients/Emily & Chilly.png';
-import hazbiImg from '../assets/clients/Hazbi LOGO png 1.png';
-import urbandImg from '../assets/clients/URBAND.png';
-import pelikanImg from '../assets/clients/Pelikan-Logo-2-1 copy.png';
-import perfumeBarImg from '../assets/clients/Perfume Bar.jpg.jpeg';
-import streetSmartImg from '../assets/clients/street smart clothing.jpeg';
-import emaratechImg from '../assets/clients/Emaratech Logo.png';
-import wafraImg from '../assets/clients/Wafra.jpg.jpeg';
-import jenganImg from '../assets/clients/Jengan.png';
-import karsazImg from '../assets/clients/Karsaz-Logo-High-Resolution.png';
-import alWaraImg from '../assets/clients/Al Wara Perfumes.jfif.jpeg';
-import hpsaaImg from '../assets/clients/HPSAA LOGO.png';
-
 export const clients = [
-    { name: 'IDEAS PAKISTAN', logo: ideasImg },
-    { name: 'SINDH POLICE', logo: sindhPoliceImg },
-    { name: 'CHILDLIFE', logo: childlifeImg },
-    { name: 'FM', logo: fmImg },
-    { name: 'DIFF (DUBAI INTERNATIONAL FILM FESTIVAL)', logo: diffImg },
-    { name: 'AD AVIATION', logo: adAviationImg },
-    { name: 'DIPLOMAT BUSINESSMEN CLUB', logo: diplomatImg },
-    { name: 'EMILY & CHILLY', logo: emilyChillyImg },
-    { name: 'HAZBI CHEMICALS', logo: hazbiImg },
-    { name: 'URBAND', logo: urbandImg },
-    { name: 'PELIKAN KNITWEAR', logo: pelikanImg },
-    { name: 'PERFUME BAR - DUBAI', logo: perfumeBarImg },
-    { name: 'STREET SMART CLOTHING', logo: streetSmartImg },
-    { name: 'EMARATECH', logo: emaratechImg },
-    { name: 'WAFRA', logo: wafraImg },
-    { name: 'JENGAN', logo: jenganImg },
-    { name: 'KARSAZ', logo: karsazImg },
-    { name: 'AL WARA PERFUMES', logo: alWaraImg },
-    { name: 'HPSAA', logo: hpsaaImg },
+    { name: 'IDEAS PAKISTAN', logo: '/clients/IDEAS 2024.png' },
+    { name: 'SINDH POLICE', logo: '/clients/Sindh Police Logo copy.png' },
+    { name: 'CHILDLIFE', logo: '/clients/ChildLife-logo.png' },
+    { name: 'FM', logo: '/clients/FM Logo.png' },
+    { name: 'DIFF (DUBAI INTERNATIONAL FILM FESTIVAL)', logo: '/clients/DIFF LOGO.png' },
+    { name: 'AD AVIATION', logo: '/clients/AD ADAVIATION.png' },
+    { name: 'DIPLOMAT BUSINESSMEN CLUB', logo: '/clients/Diplomat Businessmen Club.png' },
+    { name: 'EMILY & CHILLY', logo: '/clients/Emily & Chilly.png' },
+    { name: 'HAZBI CHEMICALS', logo: '/clients/Hazbi LOGO png 1.png' },
+    { name: 'URBAND', logo: '/clients/URBAND.png' },
+    { name: 'PELIKAN KNITWEAR', logo: '/clients/Pelikan-Logo-2-1 copy.png' },
+    { name: 'PERFUME BAR - DUBAI', logo: '/clients/Perfume Bar.jpg.jpeg' },
+    { name: 'STREET SMART CLOTHING', logo: '/clients/street smart clothing.jpeg' },
+    { name: 'EMARATECH', logo: '/clients/Emaratech Logo.png' },
+    { name: 'WAFRA', logo: '/clients/Wafra.jpg.jpeg' },
+    { name: 'JENGAN', logo: '/clients/Jengan.png' },
+    { name: 'KARSAZ', logo: '/clients/Karsaz-Logo-High-Resolution.png' },
+    { name: 'AL WARA PERFUMES', logo: '/clients/Al Wara Perfumes.jfif.jpeg' },
+    { name: 'HPSAA', logo: '/clients/HPSAA LOGO.png' },
 ];
 
 export default clients;
