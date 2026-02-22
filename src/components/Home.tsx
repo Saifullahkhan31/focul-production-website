@@ -35,9 +35,9 @@ const Home: React.FC = () => {
           <nav className="absolute left-[75%] md:left-[82%] top-[51.8%] -translate-y-1/2 flex flex-col gap-4 md:gap-6 text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase whitespace-nowrap">
             <Link to="/" className="text-[#E17A00] ml-0 transition-all hover:translate-x-2">Home</Link>
             <Link to="/about" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">About</Link>
+            <Link to="/services" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Services</Link>
             <Link to="/portfolio" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Portfolio</Link>
-            <Link to="/clients" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Clients</Link>
-            <Link to="/services" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">Services</Link>
+            <Link to="/clients" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">Clients</Link>            
             <a href="#contact" className="hover:text-[#E17A00] transition-all ml-0 hover:translate-x-2">Contact Us</a>
           </nav>
         </div>

@@ -38,9 +38,10 @@ const Clients: React.FC = () => {
             >
               <Link to="/" className="text-gray-400 hover:text-[#E17A00] transition-colors">Home</Link>
               <Link to="/about" className="text-gray-400 hover:text-[#E17A00] transition-colors">About</Link>
+              <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
               <span className="text-[#E17A00] cursor-default">Clients</span>
-              <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
+              
               <Link to="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</Link>
             </motion.nav>
           </div>

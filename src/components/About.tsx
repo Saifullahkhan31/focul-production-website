@@ -39,9 +39,9 @@ const About: React.FC = () => {
             >
               <Link to="/" className="text-gray-400 hover:text-[#E17A00] transition-colors">Home</Link>
               <Link to="/about" className="text-[#E17A00]">About</Link>
+              <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
               <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors">Clients</Link>
-              <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <a href="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</a>
             </motion.nav>
           </div>

@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logoImg from '../assets/logo.png';
 import bgImg from '../assets/bg-placeholder.jpeg';
+import { services } from '../data/services';
 
 const Services: React.FC = () => {
   return (
@@ -35,9 +36,9 @@ const Services: React.FC = () => {
             >
               <Link to="/" className="text-gray-400 hover:text-[#E17A00] transition-colors">Home</Link>
               <Link to="/about" className="text-gray-400 hover:text-[#E17A00] transition-colors">About</Link>
-              <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
-              <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors   ">Clients</Link>
               <span className="text-[#E17A00] cursor-default">Services</span>
+              <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
+              <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors">Clients</Link>
               <Link to="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</Link>
             </motion.nav>
           </div>
@@ -65,18 +66,18 @@ const Services: React.FC = () => {
             {/* Services Layout (Preserved Positioning) */}
             <nav className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <div className="relative w-full h-full pointer-events-auto">
-                <Link to="/portfolio" className="absolute top-[25%] left-[35%] -translate-x-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PODCAST</Link>
-                <a href="#" className="absolute top-[34%] left-[12%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">MUSIC VIDEOS</a>
-                <a href="#corporate movies" className="absolute top-[43%] left-[0.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">CORPORATE MOVIES</a>
-                <a href="#" className="absolute top-[58%] left-[20%] -translate-y-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">FILMS</a>
-                <a href="#" className="absolute bottom-[31%] left-[15.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">TV DRAMAS</a>
-                <a href="#" className="absolute bottom-[23%] left-[17%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">TV COMMERCIALS</a>
-                <a href="#" className="absolute bottom-[23%] right-[-3%] -translate-x-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PRESS CONFERENCE</a>
-                <a href="#" className="absolute bottom-[31%] right-[11%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">BIOGRAPHY</a>
-                <a href="#" className="absolute top-[56.3%] right-[2%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">MOVIE PREMIER</a>
-                <a href="#" className="absolute top-[44.5%] right-[-2.3%] -translate-y-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">POST PRODUCTION</a>
-                <a href="#" className="absolute top-[34%] right-[-4%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PROMOTIONAL VIDEOS</a>
-                <a href="#" className="absolute top-[25%] right-[13.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">EVENT COVERAGE</a>
+                <Link to="/portfolio?section=podcast" className="absolute top-[25%] left-[35%] -translate-x-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PODCAST</Link>
+                <Link to="/portfolio?section=music-videos" className="absolute top-[34%] left-[12%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">MUSIC VIDEOS</Link>
+                <Link to="/portfolio?section=corporate-movies" className="absolute top-[43%] left-[0.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">CORPORATE MOVIES</Link>
+                <Link to="/portfolio?section=films" className="absolute top-[58%] left-[20%] -translate-y-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">FILMS</Link>
+                <Link to="/portfolio?section=tv-dramas" className="absolute bottom-[31%] left-[15.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">TV DRAMAS</Link>
+                <Link to="/portfolio?section=tv-commercials" className="absolute bottom-[23%] left-[17%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">TV COMMERCIALS</Link>
+                <Link to="/portfolio?section=press-conference" className="absolute bottom-[23%] right-[-3%] -translate-x-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PRESS CONFERENCE</Link>
+                <Link to="/portfolio?section=biography" className="absolute bottom-[31%] right-[11%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">BIOGRAPHY</Link>
+                <Link to="/portfolio?section=movie-premier" className="absolute top-[56.3%] right-[2%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">MOVIE PREMIER</Link>
+                <Link to="/portfolio?section=post-production" className="absolute top-[44.5%] right-[-2.3%] -translate-y-1/2 text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">POST PRODUCTION</Link>
+                <Link to="/portfolio?section=promotional-videos" className="absolute top-[34%] right-[-4%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">PROMOTIONAL VIDEOS</Link>
+                <Link to="/portfolio?section=event-coverage" className="absolute top-[25%] right-[13.5%] text-[10px] md:text-[18px] font-bold text-white tracking-widest uppercase hover:text-[#E17A00] transition-colors">EVENT COVERAGE</Link>
               </div>
             </nav>
           </div>
