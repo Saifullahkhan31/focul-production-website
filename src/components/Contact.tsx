@@ -121,7 +121,7 @@ const Contact: React.FC = () => {
               <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
               <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors">Clients</Link>
-              <span className="text-[#E17A00]">Contact</span>
+              <span className="text-[#E17A00]">Contact Us</span>
             </motion.nav>
           </div>
         </header>
