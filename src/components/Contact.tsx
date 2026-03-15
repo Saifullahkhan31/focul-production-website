@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaLocationDot, FaLinkedin, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa6';
+import { FaPhone, FaEnvelope, FaLocationDot, FaInstagram, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa6';
 import logoImg from '../assets/logo.png';
 import bgImg from '../assets/bg-placeholder.jpeg';
 
@@ -72,16 +72,16 @@ const Contact: React.FC = () => {
   };
 
   const socialIcons = [
-    { icon: FaLinkedin, link: '#', label: 'LinkedIn' },
-    { icon: FaInstagram, link: '#', label: 'Instagram' },
-    { icon: FaFacebook, link: '#', label: 'Facebook' },
-    { icon: FaTwitter, link: '#', label: 'Twitter' },
+    { icon: FaYoutube, link: 'https://youtube.com/@foculproductions', label: 'YouTube' },
+    { icon: FaFacebook, link: 'https://www.facebook.com/people/Focul-Productions/61565742337775/', label: 'Facebook' },
+    { icon: FaInstagram, link: 'https://instagram.com/foculproductions', label: 'Instagram' },
+    { icon: FaTwitter, link: 'https://x.com/FoculP31671', label: 'X (Twitter)' },
   ];
 
   const contactInfo = [
     { icon: FaPhone, label: 'Phone', value: '+92 (0)21 111-801-700', link: 'tel:+922111180170' },
     { icon: FaEnvelope, label: 'Email', value: 'hello@foculproductions.com', link: 'mailto:hello@foculproductions.com' },
-    { icon: FaLocationDot, label: 'Location', value: 'Karachi, Pakistan', link: '#' },
+    { icon: FaLocationDot, label: 'Location', value: 'Karachi, Pakistan', link: 'https://maps.app.goo.gl/3iXN8bdKaXGT4vSa9', newTab: true },
   ];
 
   return (
@@ -162,6 +162,8 @@ const Contact: React.FC = () => {
                   <motion.a
                     key={index}
                     href={info.link}
+                    target={info.newTab ? '_blank' : undefined}
+                    rel={info.newTab ? 'noopener noreferrer' : undefined}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
@@ -198,9 +200,8 @@ const Contact: React.FC = () => {
                       rel="noopener noreferrer"
                       initial={{ opacity: 0, scale: 0.8 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                      whileHover={{ scale: 1.2, color: '#E17A00' }}
-                      className="text-white text-xl hover:text-[#E17A00] transition-colors"
+                      transition={{ duration: 0.35, delay: 0.7 + index * 0.1 }}
+                      className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white text-sm hover:bg-white hover:text-black hover:border-white transition-all duration-300 ease-in-out bg-black/40 backdrop-blur-sm"
                       aria-label={social.label}
                     >
                       <social.icon />
