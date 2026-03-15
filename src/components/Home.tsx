@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             <Link to="/services" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Services</Link>
             <Link to="/portfolio" className="hover:text-[#E17A00] transition-all ml-12 hover:translate-x-2">Portfolio</Link>
             <Link to="/clients" className="hover:text-[#E17A00] transition-all ml-8 hover:translate-x-2">Clients</Link>            
-            <a href="#contact" className="hover:text-[#E17A00] transition-all ml-0 hover:translate-x-2">Contact Us</a>
+            <Link to="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</Link>
           </nav>
         </div>
 
