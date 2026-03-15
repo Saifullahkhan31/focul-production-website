@@ -42,7 +42,7 @@ const About: React.FC = () => {
               <Link to="/services" className="text-gray-400 hover:text-[#E17A00] transition-colors">Services</Link>
               <Link to="/portfolio" className="text-gray-400 hover:text-[#E17A00] transition-colors">Portfolio</Link>
               <Link to="/clients" className="text-gray-400 hover:text-[#E17A00] transition-colors">Clients</Link>
-              <a href="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</a>
+              <Link to="/contact" className="text-gray-400 hover:text-[#E17A00] transition-colors">Contact Us</Link>
             </motion.nav>
           </div>
         </header>
