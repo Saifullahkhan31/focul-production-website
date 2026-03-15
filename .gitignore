@@ -23,4 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+*.md
+*cwd*
+*.env
+
 website_pages_design/*

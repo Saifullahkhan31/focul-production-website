@@ -5,6 +5,7 @@ import About from './components/About';
 import Clients from './components/Clients';
 import Portfolio from './components/Portfolio';
 import Services from './components/Services';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/services" element={<Services/>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

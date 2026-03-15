@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logoImg from '../assets/logo.png';
@@ -7,6 +7,10 @@ import { services } from '../data/services';
 
 const Portfolio: React.FC = () => {
   const location = useLocation();
+  const cameFromServices = useMemo(() => {
+    const params = new URLSearchParams(location.search);
+    return Boolean(params.get('section'));
+  }, [location.search]);
 
   useEffect(() => {
     // Get the section parameter from URL query string
@@ -136,6 +140,15 @@ const Portfolio: React.FC = () => {
           ))}
         </motion.section>
       </div>
+
+      {cameFromServices ? (
+        <Link
+          to="/services"
+          className="fixed bottom-6 right-6 z-30 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-xs md:text-sm font-bold tracking-widest uppercase text-white backdrop-blur-lg shadow-lg transition-all duration-300 hover:border-[#E17A00]/60 hover:bg-white/20"
+        >
+          &larr; Back to all services
+        </Link>
+      ) : null}
     </div>
   );
 };
