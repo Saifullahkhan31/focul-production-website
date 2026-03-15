@@ -361,7 +361,7 @@ const Contact: React.FC = () => {
           >
             <h3 className="text-[#E17A00] text-xs md:text-sm font-bold tracking-[0.3em] mb-4 uppercase">Response Time</h3>
             <p className="text-gray-200 text-lg md:text-xl font-light leading-relaxed max-w-5xl mx-auto" style={{ wordSpacing: '0.165em' }}>
-              We typically respond to inquiries within 24-48 hours. For urgent matters, feel free to call us directly.
+              We typically respond to inquiries within 12-24 hours. For urgent matters, feel free to call us directly.
             </p>
           </motion.div>
         </motion.section>
