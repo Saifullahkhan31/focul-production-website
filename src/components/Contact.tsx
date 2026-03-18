@@ -79,8 +79,8 @@ const Contact: React.FC = () => {
   ];
 
   const contactInfo = [
-    { icon: FaPhone, label: 'Phone', value: '+92 (0)21 111-801-700', link: 'tel:+922111180170' },
-    { icon: FaEnvelope, label: 'Email', value: 'hello@foculproductions.com', link: 'mailto:hello@foculproductions.com' },
+    { icon: FaPhone, label: 'Phone', value: '+92 333 5155167', link: 'tel:+923335155167' },
+    { icon: FaEnvelope, label: 'Email', value: 'info@foculproductions.com', link: 'mailto:info@foculproductions.com' },
     { icon: FaLocationDot, label: 'Location', value: 'Karachi, Pakistan', link: 'https://maps.app.goo.gl/3iXN8bdKaXGT4vSa9', newTab: true },
   ];
 

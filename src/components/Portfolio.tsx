@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import logoImg from '../assets/logo.png';
 import bgImg from '../assets/bg-placeholder.jpeg';
 import { services } from '../data/services';
+import { portfolio } from '../data/portfolio';
 
 const Portfolio: React.FC = () => {
   const location = useLocation();
@@ -33,21 +34,64 @@ const Portfolio: React.FC = () => {
       return (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {/* YouTube Thumbnails as placeholders */}
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
-            <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
+          <a href="https://youtu.be/tfjnRb82Ej0?si=cDQJc3a42t_UFs5U" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
+            {/* <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
               <span className="text-white text-sm">Podcast #1</span>
-            </div>
+            </div> */}
+            <img src="https://img.youtube.com/vi/tfjnRb82Ej0/maxresdefault.jpg" alt="Podcast #1" className="w-full aspect-video object-cover group-hover:scale-105 transition-transform" />
+            <span className="text-white text-m">The Media Doctor - Caiyad Phahad</span>
           </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
-            <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
+
+          <a href="https://youtu.be/dr_YFBvLL2E?si=hz6S461I1t8SiLAV" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
+            {/* <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
               <span className="text-white text-sm">Podcast #2</span>
-            </div>
+            </div> */}
+            <img src="https://img.youtube.com/vi/dr_YFBvLL2E/maxresdefault.jpg" alt="Podcast #2" className="w-full aspect-video object-cover group-hover:scale-105 transition-transform" />
+            <span className="text-white text-m">The Best Dermatologist in town Dr Tahira Soomro</span>
           </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
-            <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
+
+          <a href="https://youtu.be/gymhJJ7PwKM?si=5lZyiUiWARTxrOPJ" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
+            {/* <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
               <span className="text-white text-sm">Podcast #3</span>
-            </div>
+            </div> */}
+            <img src="https://img.youtube.com/vi/gymhJJ7PwKM/maxresdefault.jpg" alt="Podcast #3" className="w-full aspect-video object-cover group-hover:scale-105 transition-transform" />
+            <span className="text-white text-m">"Your brand's best prescription Media Doctor CAIYAD Phahad."</span>
           </a>
+
+          <a href="https://youtu.be/a4i73uzhDdM?si=sRbZlrmGFOA_DgRL" target="_blank" rel="noopener noreferrer" className="group cursor-pointer relative overflow-hidden rounded-lg">
+            {/* <div className="w-full aspect-video bg-gray-700 flex items-center justify-center group-hover:bg-gray-600 transition-colors">
+              <span className="text-white text-sm">Podcast #3</span>
+            </div> */}
+            <img src="https://img.youtube.com/vi/a4i73uzhDdM/maxresdefault.jpg" alt="Podcast #4" className="w-full aspect-video object-cover group-hover:scale-105 transition-transform" />
+            <span className="text-white text-m">DR DHANPAT SINGH - CHEST SPECIALIST GOVT SINDH </span>
+          </a>
+
+        </div>
+      );
+    }
+
+    if (serviceId === 'music-videos') {
+      const items = portfolio['music-videos'] ?? [];
+      return (
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {items.map((item) => (
+            <div
+              key={item.videoSrc}
+              // className="group rounded-lg border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-[#E17A00]/40 hover:bg-white/10"
+            >
+              <video
+                className="w-full aspect-video rounded-md object-cover"
+                src={item.videoSrc}
+                poster={item.posterSrc}
+                controls
+                preload="metadata"
+              />
+              <div className="mt-3 flex items-center justify-between text-xs md:text-sm">
+                <span className="font-semibold tracking-wider text-white">{item.title}</span>
+                {item.label ? <span className="text-gray-400">{item.label}</span> : null}
+              </div>
+            </div>
+          ))}
         </div>
       );
     }
